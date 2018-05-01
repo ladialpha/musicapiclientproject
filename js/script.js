@@ -12,15 +12,23 @@ $(document).ready(function() {
         var searchUrl = 'https://api.soundcloud.com/tracks?q=' + searchTerm + '&client_id=' + apiKey;
 
         $('#input').attr('href', searchUrl);
-        $('#searchButton').text(searchUrl);
 
         $.ajax({
             url: searchUrl,
             method: 'GET',
             success: function(response) {
                 console.log(response);
+                ShowResults(response);
             }
         });
     }
 
+
+    function ShowResults(results) {
+        $("#results").empty();
+        results.forEach(function(data) {
+            var li="<li><p>"+ data.title +"</p><img src= "+ data.artwork_url +"></li>";
+           $("#results").append(li);
+        });
+    }
 });

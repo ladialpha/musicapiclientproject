@@ -1,3 +1,23 @@
 div {
-    background-color: blue;
+    background-color: LightGreen;
+}
+#MusicTube{
+    font-family: 'Anton', sans-serif;
+}
+#MusicTube {
+    text-align: center;
+}
+#results {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+#searchButton {
+   text-align: center;
+}
+#input {
+    text-align: center;
+}
+body {
+    background-color: LightGreen;
 }
