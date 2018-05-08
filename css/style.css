@@ -7,7 +7,7 @@ div {
 #MusicTube {
     text-align: center;
 }
-#results {
+h1 {
     font-family: 'Comfortaa', cursive;
 }
 
@@ -17,7 +17,22 @@ div {
 }
 #input {
     text-align: center;
+    width: 320px;
+    height: 
+    
 }
 body {
     background-color: LightGreen;
 }
+
+.searchbar {
+    margin:auto;
+    width: 400px
+}
+
+body {
+    background-image: url("http://www.imagesyoulike.com/images/v/32x24/v1986.jpg");
+     background-repeat:no-repeat;
+     background-size:cover;
+}
+

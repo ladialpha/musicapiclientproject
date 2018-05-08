@@ -26,9 +26,10 @@ $(document).ready(function() {
 
     function ShowResults(results) {
         $("#results").empty();
+        console.log(results);
         results.forEach(function(data) {
-            var li="<li><p>"+ data.title +"</p><img src= "+ data.artwork_url +"></li>";
-           $("#results").append(li);
+            var link="<li><p>"+ data.title +"</p><a href= "+ data.permalink_url +"><img src= "+ data.artwork_url +"></a></li>";
+           $("#results").append(link);
         });
     }
 });
